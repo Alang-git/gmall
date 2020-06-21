@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.gmall.manage.mapper.PmsBaseAttrValueMapper">
+
+  <resultMap id="BaseAttrValueResultMap" type="com.bjpowernode.gmall.bean.PmsBaseAttrValue">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <id column="value_name" jdbcType="BIGINT" property="valueName" />
+    <result column="attr_id" jdbcType="VARCHAR" property="attrId" />
+    <result column="is_enabled" jdbcType="VARCHAR" property="isEnabled" />
+  </resultMap>
+
+  <sql id="AttrInfo_Column_List">
+    id,value_name,attr_id,is_enabled
+  </sql>
+
+</mapper>
